@@ -39,7 +39,6 @@ def won():
   
 #while loops for the movement
 while(True):
-  print("actual: %s" %sense.get_pixel(0, 1))
   gyro = sense.get_orientation()
   pitch = gyro["pitch"]
   roll = gyro["roll"]
