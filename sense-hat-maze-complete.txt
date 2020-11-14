@@ -60,8 +60,8 @@ while(True):
     #implement code below to move the player down
     y += 1;
     sense.set_pixel(x,y,w)
-
     sleep(0.01)
+
   #left
   if (pitch > 10 and pitch < 180 and x>0 and not(sense.get_pixel(x-1,y)==[248, 0, 0])):
     sense.set_pixel(x,y,b)
@@ -69,8 +69,8 @@ while(True):
     #implement code below to move the player left
     x -= 1
     sense.set_pixel(x,y,w)
-
     sleep(0.01)
+
   #right
   if (pitch < 350 and pitch > 180 and x<7 and not(sense.get_pixel(x+1,y)==[248, 0, 0])):
     sense.set_pixel(x,y,b)
@@ -78,8 +78,8 @@ while(True):
     #implement code below to move the player right    
     x += 1
     sense.set_pixel(x,y,w)
-
     sleep(0.01)
+
   if(x==5 and y==7):
     sense.show_message("good game")
     break
