@@ -51,8 +51,8 @@ while(True):
     #implement code below to move the player up
     y -= 1;
     sense.set_pixel(x,y,w)
-
     sleep(0.01)
+
   #down
   if (roll > 10 and roll < 180 and y<7 and not(sense.get_pixel(x,y+1)==[248, 0, 0])):
     sense.set_pixel(x,y,b)
